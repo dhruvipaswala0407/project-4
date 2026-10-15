@@ -1810,9 +1810,9 @@ let productCard: any = document.querySelector('.product');
 products.forEach(element => {
     element.description = descLength(element.description);
     productCard.innerHTML += `<div class="col-6 col-lg-4 col-xl-3 px-1">
-                                    <div class="card" style="width: 100%; height:450px">
+                                    <div class="card" style="width: 100%; height:400px">
                                         <div class="col-7 mx-auto">
-                                          <div class="category rounded-pill bg-info text-center mt-3 text-bg-primary">
+                                          <div class="category rounded-pill bg-info text-center m-3 text-bg-primary p-1">
                                             <p>${element.category}</p>
                                           </div>
                                         </div>
@@ -1829,9 +1829,9 @@ products.forEach(element => {
                                                     ${element.description}
                                                 </p>
                                             </div>
-                                            <div class="price-discount d-flex justify-content-between">
+                                            <div class="price-discount d-flex justify-content-between ">
                                                 <p>Price = ${element.price} $</p>
-                                                <p class="bg-info border rounded-3 py-1 px-2 text-bg-primary">${element.discountPercentage}% off</p>
+                                                <p class="bg-info border rounded-3 py-1 px-2 text-bg-primary mt-1">${element.discountPercentage}% off</p>
                                             </div>
                                             <div class="rating-stock d-flex justify-content-between">
                                                 <p>Ratings</p>
